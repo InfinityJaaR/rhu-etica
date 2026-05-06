@@ -150,7 +150,7 @@ export default function VotingClient() {
           <span className="text-xs font-medium uppercase tracking-widest text-muted">En vivo</span>
         </div>
         <h1 className="font-display text-4xl font-bold tracking-tight text-foreground mb-3">
-          Ética en la IA
+          Ética Informatica
         </h1>
         <p className="text-muted text-base mb-10">RHU — Exposición</p>
         <div className="w-full max-w-sm rounded-2xl border border-border bg-surface p-6 text-center">
