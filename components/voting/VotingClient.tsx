@@ -152,7 +152,7 @@ export default function VotingClient() {
         <h1 className="font-display text-4xl font-bold tracking-tight text-foreground mb-3">
           Ética Informática
         </h1>
-        <p className="text-muted text-base mb-10">RHU — Exposición</p>
+        <p className="text-muted text-base mb-10">Recursos Humanos</p>
         <div className="w-full max-w-sm rounded-2xl border border-border bg-surface p-6 text-center">
           <div className="mb-4 mx-auto h-12 w-12 rounded-full bg-surface-2 flex items-center justify-center">
             <svg
