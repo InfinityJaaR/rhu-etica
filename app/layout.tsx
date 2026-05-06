@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ética en la IA — RHU Exposición",
-  description: "Plataforma de votación en tiempo real sobre dilemas éticos en la inteligencia artificial",
+  title: "Ética Informatica",
+  description: "Plataforma de votación en tiempo real sobre dilemas éticos",
 };
 
 export default function RootLayout({
