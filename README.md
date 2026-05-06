@@ -1,4 +1,4 @@
-# Ética en la IA — Plataforma de Votación en Tiempo Real
+# Ética Informática — Plataforma de Votación en Tiempo Real
 
 Una aplicación web interactiva y en tiempo real para exposiciones universitarias sobre Ética Informática. La audiencia (usuarios anónimos) vota sobre dilemas éticos mientras el presentador (admin) controla la información mostrada en tiempo real.
 
@@ -84,8 +84,8 @@ Las políticas RLS permiten lectura pública de todas las tablas e inserción p�
 ### 1. Clonar y instalar dependencias
 
 ```bash
-git clone https://github.com/InfinityJaaR/rhu-etica.git
-cd rhu-etica
+git clone https://github.com/InfinityJaaR/etica-informatica.git
+cd etica-informatica
 npm install
 ```
 
@@ -159,4 +159,4 @@ MIT
 
 ---
 
-Desarrollado para la exposición RHU sobre Ética en la Inteligencia Artificial.
+Desarrollado para la exposición Recursos Humanos sobre Ética Informática.

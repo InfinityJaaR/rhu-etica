@@ -112,7 +112,7 @@ export default function ResultsClient() {
           <span className="inline-block h-2 w-2 rounded-full bg-accent animate-pulse" />
           <span className="text-xs font-medium uppercase tracking-widest text-muted">En vivo</span>
         </div>
-        <h1 className="font-display text-5xl font-bold text-foreground mb-4">Ética en la IA</h1>
+        <h1 className="font-display text-5xl font-bold text-foreground mb-4">Ética Informática</h1>
         <p className="text-muted text-xl">Esperando el próximo dilema...</p>
       </div>
     )
