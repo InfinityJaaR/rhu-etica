@@ -136,11 +136,11 @@ export default function AdminClient() {
         <div className="mb-10">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xs font-medium uppercase tracking-widest text-muted">
-              RHU — Expo
+              Recursos Humanos — Expo
             </span>
           </div>
           <h1 className="font-display text-3xl font-bold text-foreground">Panel de Control</h1>
-          <p className="text-muted text-sm mt-1">Ética en la Inteligencia Artificial</p>
+          <p className="text-muted text-sm mt-1">Ética Informática</p>
 
           {/* Quick links */}
           <div className="mt-5 flex flex-wrap gap-2">
