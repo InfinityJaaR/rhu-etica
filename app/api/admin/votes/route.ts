@@ -11,6 +11,7 @@ export async function DELETE(request: Request) {
 
     const supabase = await createClient()
 
+    // Get all option IDs for this dilemma
     const { data: options, error: optionsError } = await supabase
       .from('options')
       .select('id')
@@ -26,17 +27,22 @@ export async function DELETE(request: Request) {
 
     const optionIds = options.map((o) => o.id)
 
-    const { error } = await supabase
+    // Delete all votes for these options
+    const { data, count, error } = await supabase
       .from('votes')
       .delete()
       .in('option_id', optionIds)
+      .select('id', { count: 'exact' })
 
     if (error) {
+      console.error('[v0] Delete votes error:', error)
       return NextResponse.json({ error: error.message }, { status: 500 })
     }
 
-    return NextResponse.json({ success: true })
-  } catch {
+    console.log('[v0] Deleted votes:', count)
+    return NextResponse.json({ success: true, deleted: count || 0 })
+  } catch (err) {
+    console.error('[v0] Reset votes error:', err)
     return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
   }
 }
