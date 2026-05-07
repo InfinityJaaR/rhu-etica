@@ -42,14 +42,15 @@ export async function DELETE(request: Request) {
       .from('votes')
       .delete()
       .in('option_id', optionIds)
+      .select('id')
 
     if (error) {
       console.error('[v0] Delete votes error:', error)
       return NextResponse.json({ error: error.message }, { status: 500 })
     }
 
-    console.log('[v0] Votes deleted successfully. Data:', data)
-    return NextResponse.json({ success: true, deleted: data?.length || 0 })
+    console.log('[v0] Votes deleted successfully. Count:', data?.length || 0)
+    return NextResponse.json({ success: true, deleted: (data as any[])?.length || 0 })
   } catch (err) {
     console.error('[v0] Reset votes error:', err)
     return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
